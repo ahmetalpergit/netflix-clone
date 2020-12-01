@@ -62,6 +62,8 @@ function Row(props) {
         <div className="row">
             <h2>{props.title}</h2>
             <div className="row__posters">
+                <span className="pagination pagination--left"><i class="fas fa-chevron-left fa-2x"></i></span>
+                <span className="pagination pagination--right"><i class="fas fa-chevron-right fa-2x"></i></span>
                 {movies.map((movie) => {
                     return <img key={movie.id} className="row__poster" src={base_url + movie.backdrop_path} alt={movie.name} onClick={() => handleClick(movie)}/>
                 })}

@@ -1,5 +1,4 @@
 .row {
-    margin-left: 60px;
     padding: 0;
 }
 
@@ -7,16 +6,40 @@
     font-size: 28px;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
+    padding-left: 60px;
 }
 
 .row__posters {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     gap: 5px;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 20px 0 30px;
-    padding: 0 0 10px;
+    padding-left: 60px;
+}
+
+.pagination {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination--left {
+    left: 0;
+    top: 0;
+    /* display: none; */
+}
+
+.pagination--right {
+    right: 0;
+    top: 0;
+    /* display: none; */
 }
 
 .row__poster {
