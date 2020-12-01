@@ -1,0 +1,153 @@
+.row {
+    margin-left: 60px;
+    padding: 0;
+}
+
+.row h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.25);
+}
+
+.row__posters {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 20px 0 30px;
+    padding: 0 0 10px;
+}
+
+.row__poster {
+    width: auto;
+    height: 10vw;
+    object-fit: contain;
+    max-height: 150px;
+    min-height: 80px;
+    transition: transform 0.3s;
+    border-radius: 3px;
+}
+
+.info__overlay {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+}
+
+.info__overlay--contentBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: auto;
+    min-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.info__overlay--videoBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.info__overlay--youtube {
+    width: 100%;
+    height: 478px;
+}
+
+.info__overlay--iconBox {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info__overlay--iconBox > * {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.info__button {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 20px;
+    border: none;
+    padding: 15px 30px;
+    min-width: 100px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.info__button--play {
+    color: #333;
+    background-color: #fff;
+}
+
+.info__button span {
+    margin-top: -5px;
+}
+
+.info__button--play:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.info__overlay--text {
+    padding: 20px 40px 40px;
+}
+
+.info__overlay--text h1 {
+    font-size: 40px;
+}
+
+.info__overlay--text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.info__overlay--text p {
+    line-height: 1.6;
+}
+
+.info__overlay--btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    z-index: 50;
+}
+
+.icon-white {
+    color: white;
+}
+
+.icon-black {
+    color: #111;
+}
+
+.icon-black-opacity {
+    color: rgba(32, 32, 32, 0.6);
+}
+
+.info__icon:hover > .icon-black-opacity {
+    color: rgba(32, 32, 32, 1);
+}
