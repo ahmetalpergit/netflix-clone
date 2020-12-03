@@ -1,12 +1,13 @@
 .nav {
     width: 100%;
-    height: 68px;
+    height: 6.8rem;
     position: fixed;
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.801), rgba(22, 22, 22, 0.493), transparent);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-size: 1.4rem;
 }
 
 .nav__list {
@@ -16,18 +17,32 @@
 }
 
 .nav__item {
-    margin-right: 20px;
+    margin-right: 2rem;
     margin-top: -5px;
-}
-
-.nav__item--selected {
-    font-weight: bolder;
 }
 
 .nav__link {
     text-decoration: none;
     color: inherit;
-    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.35rem;
+    padding: 3px 6px;
+    transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #ddd;
+}
+
+.nav__link--selected {
+    font-weight: bolder;
+    cursor: inherit;
+}
+
+.nav__link--selected:hover {
+    color: inherit;
 }
 
 @keyframes appear {
@@ -47,25 +62,29 @@
 }
 
 .nav--left {
-    margin-left: 60px;
+    margin-left: 6rem;
+    height: 100%;
 }
 
 .nav--right {
-    margin-right: 60px;
+    margin-right: 6rem;
+    height: 100%;
 }
 
 .logo {
-    height: 26px;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-right: 6rem;
 }
 
 .nav--right i {
-    margin-right: 25px;
-    font-size: 20px;
+    margin-right: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
 .nav--right span {
-    margin-right: 25px;
+    margin-right: 2.5rem;
     margin-top: -3px;
     font-weight: 500;
     cursor: pointer;
@@ -82,7 +101,95 @@
 }
 
 .user__profile {
-    height: 32px;
+    height: 3.2rem;
     border-radius: 3px;
-    margin-right: 10px;
+    margin-right: 1rem;
+}
+
+.nav__browse {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    display: none;
+}
+
+.nav__browse:hover .nav__list--hamburger {
+    opacity: 1;
+}
+
+.icon--down {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    margin-top: -6px;
+}
+
+.nav__list--hamburger {
+    position: absolute;
+    top: 7rem;
+    left: -8.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    list-style: none;
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid rgba(80, 80, 80, 0.2);
+    border-top: 2px solid #fff;
+    background-color: rgba(10, 10, 10, 0.8);
+    transition: all 0.2s ease;
+}
+
+.icon--up {
+    position: absolute;
+    top: -.9rem;
+    font-size: 2rem;
+}
+
+.nav__item--hamburger {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav__link--browse {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-family: inherit;
+}
+
+.nav__item--hamburger:hover {
+    background-color: rgba(53, 53, 53, 0.8);
+}
+
+.nav__link--hamburger {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.35rem;
+    transition: all 0.3s ease;
+}
+
+/****************** MEDIA QUERIES ****************/
+
+@media (max-width: 885px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__browse {
+        display: flex;
+    }
 }

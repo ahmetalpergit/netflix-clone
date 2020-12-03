@@ -62,9 +62,9 @@ function Row(props) {
         const scrollContainer = document.querySelector(`.${el[1]}`);
 
         if (e.target.className === 'pagination pagination--right') {
-            scrollContainer.scrollLeft += 250;
+            scrollContainer.scrollLeft += 400;
         } else {
-            scrollContainer.scrollLeft -= 250;
+            scrollContainer.scrollLeft -= 400;
         }
     }
 

@@ -7,7 +7,7 @@
 }
 
 .banner__content {
-    padding: 0 60px;
+    padding: 0 6rem;
     height: 70vh;
     /* min-height: 40vh; */
     display: flex;
@@ -17,28 +17,33 @@
 }
 
 .banner__title {
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 800;
-    max-width: 700px;
+    max-width: 70rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
 }
 
 .banner__overview {
-    margin: 10px 0;
-    max-width: 600px;
-    font-size: 24px;
+    margin: 1rem 0;
+    max-width: 60rem;
+    font-size: 2.4rem;
     font-weight: 400;
     line-height: 1.5;
     text-shadow: 2px 2px 4px rgba(0,0,0,.45);
 }
 
 .banner__buttons {
-    margin: 10px 0;
+    margin: 1rem 0;
     display: flex;
 }
 
 button i {
-    margin-right: 15px;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+}
+
+button:last-child i{
+    font-size: 2.5rem;
 }
 
 .banner__button {
@@ -46,10 +51,10 @@ button i {
     color: inherit;
     font-weight: 500;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 2rem;
     border: none;
-    padding: 15px 30px;
-    min-width: 100px;
+    padding: 1.5rem 3rem;
+    min-width: 10rem;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -74,13 +79,13 @@ button i {
 }
 
 .banner__button:first-of-type {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .banner__gradient {
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 10rem;
     width: 100%;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
 }

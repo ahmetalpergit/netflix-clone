@@ -38,7 +38,7 @@ function Banner(props) {
                 <h4 className="banner__overview">{truncate(description, 120)}</h4>
                 <div className="banner__buttons">
                     <button className="banner__button banner__button--play"><i className="fas fa-play"></i><span>Play</span></button>
-                    <button className="banner__button banner__button--more"><i className="far fa-question-circle" style={{fontSize: '25px'}}></i><span>More Info</span></button>
+                    <button className="banner__button banner__button--more"><i className="far fa-question-circle"></i><span>More Info</span></button>
                 </div>
             </div>
             <div className="banner__gradient"></div>
