@@ -116,7 +116,7 @@
 }
 
 .nav__browse:hover .nav__list--hamburger {
-    opacity: 1;
+    display: flex;
 }
 
 .icon--down {
@@ -129,11 +129,10 @@
     position: absolute;
     top: 7rem;
     left: -8.4rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    opacity: 0;
     list-style: none;
     width: 30rem;
     height: 30rem;
