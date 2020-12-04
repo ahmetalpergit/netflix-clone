@@ -18,7 +18,6 @@
 
 .nav__item {
     margin-right: 2rem;
-    margin-top: -5px;
 }
 
 .nav__link {
@@ -74,7 +73,7 @@
 .logo {
     height: 2.6rem;
     cursor: pointer;
-    margin-right: 6rem;
+    margin-right: 4rem;
 }
 
 .nav--right i {
