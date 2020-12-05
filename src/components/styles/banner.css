@@ -1,49 +1,64 @@
 .banner {
     padding: 0;
     width: auto;
-    height: 100vh;
+    height: 47vw;
     color: #fff;
     position: relative;
 }
 
 .banner__content {
-    padding: 0 6rem;
-    height: 70vh;
-    /* min-height: 40vh; */
+    padding: 0 3vw;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    padding-bottom: 2vw;
 }
 
 .banner__title {
-    font-size: 6rem;
+    font-size: 4vw;
     font-weight: 800;
     max-width: 70rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
 }
 
 .banner__overview {
-    margin: 1rem 0;
-    max-width: 60rem;
-    font-size: 2.4rem;
+    margin: 1vw 0;
+    max-width: 40vw;
+    font-size: 1.5vw;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0,0,0,.45);
 }
 
+.banner__overview--expanded {
+    max-width: 50vw;
+}
+
+.banner__moreInfo {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.banner__moreInfo:hover {
+    transform: scale(1.2);
+}
+
 .banner__buttons {
-    margin: 1rem 0;
+    margin: 1vw 0;
     display: flex;
 }
 
-button i {
-    margin-right: 1.5rem;
-    font-size: 2rem;
+.banner__button--icon {
+    margin-right: .8vw;
+    font-size: 1vw;
 }
 
-button:last-child i{
-    font-size: 2.5rem;
+.banner__button--more .banner__button--icon {
+    font-size: 1.5vw;
 }
 
 .banner__button {
@@ -53,8 +68,8 @@ button:last-child i{
     font-family: inherit;
     font-size: 2rem;
     border: none;
-    padding: 1.5rem 3rem;
-    min-width: 10rem;
+    padding: .8vw 2vw;
+    min-width: 3vw;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -67,7 +82,8 @@ button:last-child i{
 }
 
 .banner__button span {
-    margin-top: -5px;
+    margin-top: -.4vw;
+    font-size: 1.5vw;
 }
 
 .banner__button--play:hover {
@@ -79,7 +95,7 @@ button:last-child i{
 }
 
 .banner__button:first-of-type {
-    margin-right: 1.5rem;
+    margin-right: 1vw;
 }
 
 .banner__gradient {
@@ -88,4 +104,49 @@ button:last-child i{
     height: 10rem;
     width: 100%;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
+
+@media (max-width: 775px) {
+    .banner__overview {
+        font-size: 1.2rem;
+    }
+
+    .banner__content {
+        height: 75%;
+    }
+
+    .banner__overview--expanded {
+        max-width: 75vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner__overview {
+        display: none;
+    }
+
+    .banner__content {
+        padding-bottom: 2vw;
+    }
+
+    .banner__title {
+        font-size: 6vw;
+    }
+
+    .banner__button {
+        padding: 1.5vw 3vw;
+
+    }
+
+    .banner__button span {
+        font-size: 3vw;
+    }
+    
+    .banner__button--icon {
+        font-size: 3vw;
+    }
+
+    .banner__button--more .banner__button--icon {
+        font-size: 4vw;
+    }
 }

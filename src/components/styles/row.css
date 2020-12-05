@@ -10,14 +10,14 @@
 .row {
     padding: 0;
     position: relative;
-    margin: 2rem 0 3rem;
+    margin: 1.5vw 0 2.5vw;
 }
 
 .row__title {
-    font-size: 2.8rem;
+    font-size: 2vw;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
-    padding-left: 6rem;
+    padding-left: 3vw;
 }
 
 .row__posters {
@@ -26,7 +26,7 @@
     gap: 5px;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-left: 6rem;
+    padding-left: 3vw;
 }
 
 .pagination {
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 6rem;
+    width: 3vw;
     background-color: rgba(0, 0, 0, 0.4);
     transition: opacity 0.2s;
 }
@@ -46,7 +46,8 @@
 }
 
 .pagination i {
-    pointer-events: none
+    pointer-events: none;
+    font-size: 1.3vw;
 }
 
 .pagination--left {
@@ -110,7 +111,7 @@
 
 .info__overlay--iconBox {
     position: absolute;
-    bottom: 5rem;
+    bottom: 4vw;
     left: 3rem;
     display: flex;
     align-items: center;
@@ -140,10 +141,12 @@
 .info__button--play {
     color: #333;
     background-color: #fff;
+    font-size: 2rem;
 }
 
 .info__button span {
-    margin-top: -5px;
+    margin-top: -.4vw;
+    margin-left: 1rem;
 }
 
 .info__button--play:hover {
@@ -195,4 +198,55 @@
 
 .info__icon:hover > .icon-black-opacity {
     color: rgba(32, 32, 32, 1);
+}
+
+@media (max-width: 900px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__browse {
+        display: flex;
+    }
+
+    .info__overlay--contentBox {
+        width: 95%;
+        top: 6rem;
+        transform: translateX(-50%);
+    }
+
+    .info__overlay--youtube {
+        height: 45vw;
+    }
+
+    .info__overlay--text {
+        padding: 2vw 4vw 4vw;
+    }
+
+    .info__overlay--text h2 {
+        margin-bottom: 3vw;
+    }
+}
+
+@media (max-width: 775px) {
+    .rows {
+        top: -7rem;
+    }
+
+    .info__button {
+        padding: 1rem 2rem;
+    }
+
+    .row__poster {
+        height: 15vw;
+    }
+
+    .row__title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .rows {
+        top: -5rem;
+    }
 }

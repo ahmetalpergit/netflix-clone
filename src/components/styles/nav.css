@@ -61,19 +61,19 @@
 }
 
 .nav--left {
-    margin-left: 6rem;
+    margin-left: 3vw;
     height: 100%;
 }
 
 .nav--right {
-    margin-right: 6rem;
+    margin-right: 3vw;
     height: 100%;
 }
 
 .logo {
     height: 2.6rem;
     cursor: pointer;
-    margin-right: 4rem;
+    margin-right: 3vw;
 }
 
 .nav--right i {
@@ -126,8 +126,8 @@
 
 .nav__list--hamburger {
     position: absolute;
-    top: 7rem;
-    left: -8.4rem;
+    top: 6.5rem;
+    left: -8.8rem;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -137,7 +137,7 @@
     height: 30rem;
     border: 1px solid rgba(80, 80, 80, 0.2);
     border-top: 2px solid #fff;
-    background-color: rgba(10, 10, 10, 0.8);
+    background-color: rgba(10, 10, 10, 0.9);
     transition: all 0.2s ease;
 }
 
@@ -183,11 +183,21 @@
 
 /****************** MEDIA QUERIES ****************/
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
     .nav__list {
         display: none;
     }
     .nav__browse {
         display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__list--hamburger {
+        left: -7.7rem;
+    }
+
+    .nav__link--hamburger {
+        font-size: 1.6rem;
     }
 }

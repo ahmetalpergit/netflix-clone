@@ -6,6 +6,7 @@ function Banner(props) {
 
     const [movie, setMovie] = useState([]);
     const [description, setDescription] = useState([]);
+    const [moreInfo, setMoreInfo] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
@@ -35,10 +36,10 @@ function Banner(props) {
         }}>
             <div className="banner__content">
                 <h1 className="banner__title">{movie?.name || movie?.title || movie?.original_name}</h1>
-                <h4 className="banner__overview">{truncate(description, 120)}</h4>
+                <h4 className={`banner__overview${moreInfo ? ' banner__overview--expanded' : ''}`}>{moreInfo ? description : truncate(description, 120)}<i className={`banner__moreInfo fas fa-chevron-${moreInfo ? 'left' : 'right'}`} onClick={() => !moreInfo ? setMoreInfo(true) : setMoreInfo(false)}></i></h4>
                 <div className="banner__buttons">
-                    <button className="banner__button banner__button--play"><i className="fas fa-play"></i><span>Play</span></button>
-                    <button className="banner__button banner__button--more"><i className="far fa-question-circle"></i><span>More Info</span></button>
+                    <button className="banner__button banner__button--play"><i className="banner__button--icon fas fa-play"></i><span>Play</span></button>
+                    <button className="banner__button banner__button--more"><i className="banner__button--icon far fa-question-circle"></i><span>More Info</span></button>
                 </div>
             </div>
             <div className="banner__gradient"></div>

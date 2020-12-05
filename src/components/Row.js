@@ -34,7 +34,6 @@ function Row(props) {
         },
     };
 
-
     const handleClick = (movie) => {
         if (trailerPath === '') {
             movieTrailer(movie?.name || movie?.title || movie?.original_name || movie?.original_title).then((response) => {
@@ -80,7 +79,7 @@ function Row(props) {
                     })}
                 </div>
                 {trailerPath && <div className="info__overlay" onClick={() => handleClick(null)}>
-                                    <div className="info__overlay--contentBox">
+                                    <div className="info__overlay--contentBox" onClick={(e) => e.stopPropagation()}>
                                         <span onClick={() => handleClick(null)} className="info__overlay--btnClose fa-stack fa-2x">
                                             <i className="fas fa-circle fa-stack-2x icon-black"></i>
                                             <i className="fas fa-times fa-stack-1x icon-white"></i>
