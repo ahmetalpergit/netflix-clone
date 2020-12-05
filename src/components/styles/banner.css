@@ -70,7 +70,7 @@
     border: none;
     padding: .8vw 2vw;
     min-width: 3vw;
-    border-radius: 3px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     transition: all 0.1s;
@@ -118,6 +118,10 @@
     .banner__overview--expanded {
         max-width: 75vw;
     }
+
+    .banner__gradient {
+        height: 8rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -134,19 +138,23 @@
     }
 
     .banner__button {
-        padding: 1.5vw 3vw;
+        padding: 1.2vw 2.5vw;
 
     }
 
     .banner__button span {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     
     .banner__button--icon {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .banner__button--more .banner__button--icon {
-        font-size: 4vw;
+        font-size: 3vw;
+    }
+
+    .banner__gradient {
+        height: 7rem;
     }
 }

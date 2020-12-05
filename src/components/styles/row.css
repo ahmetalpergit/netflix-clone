@@ -71,7 +71,7 @@
     max-height: 15rem;
     min-height: 8rem;
     transition: transform 0.3s;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .info__overlay {
@@ -131,7 +131,7 @@
     border: none;
     padding: 1.5rem 3rem;
     min-width: 10rem;
-    border-radius: 3px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     transition: all 0.1s;

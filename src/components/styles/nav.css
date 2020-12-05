@@ -160,6 +160,7 @@
 .nav__link--browse {
     text-decoration: none;
     color: inherit;
+    font-size: inherit;
     background-color: transparent;
     border: none;
     height: 100%;
