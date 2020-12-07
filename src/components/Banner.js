@@ -74,37 +74,37 @@ function Banner(props) {
             </div>
             <div className="banner__gradient"></div>
             {trailerPath && <div className="info__overlay" onClick={() => handleClick(null)}>
-                                    <div className="info__overlay--contentBox" onClick={(e) => e.stopPropagation()}>
-                                        <span onClick={() => handleClick(null)} className="info__overlay--btnClose fa-stack fa-2x">
-                                            <i className="fas fa-circle fa-stack-2x icon-black"></i>
-                                            <i className="fas fa-times fa-stack-1x icon-white"></i>
-                                        </span>
-                                        <div className="info__overlay--videoBox">
-                                            <YouTube className="info__overlay--youtube" videoId={trailerPath} opts={opts} />
-                                            <div className="info__overlay--iconBox">
-                                                <button className="info__button info__button--play"><i className="fas fa-play"></i><span>Play</span></button>
-                                                <span className="fa-stack fa-2x info__icon">
-                                                    <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
-                                                    <i className="fas fa-plus fa-stack-1x icon-white"></i>
-                                                </span>
-                                                <span className="fa-stack fa-2x info__icon">
-                                                    <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
-                                                    <i className="far fa-thumbs-up fa-stack-1x icon-white"></i>
-                                                </span>
-                                                <span className="fa-stack fa-2x info__icon">
-                                                    <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
-                                                    <i className="far fa-thumbs-down fa-stack-1x icon-white"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="info__overlay--text">
-                                            <h1>{movie.title || movie.name}</h1>
-                                            <h2>{movie.original_title ? `(${movie.original_title})` : ''}</h2>
-                                            <p>{description}</p>
+                                <div className="info__overlay--contentBox" onClick={(e) => e.stopPropagation()}>
+                                    <span onClick={() => handleClick(null)} className="info__overlay--btnClose fa-stack fa-2x">
+                                        <i className="fas fa-circle fa-stack-2x icon-black"></i>
+                                        <i className="fas fa-times fa-stack-1x icon-white"></i>
+                                    </span>
+                                    <div className="info__overlay--videoBox">
+                                        <YouTube className="info__overlay--youtube" videoId={trailerPath} opts={opts} />
+                                        <div className="info__overlay--iconBox">
+                                            <button className="info__button info__button--play"><i className="fas fa-play"></i><span>Play</span></button>
+                                            <span className="fa-stack fa-2x info__icon">
+                                                <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
+                                                <i className="fas fa-plus fa-stack-1x icon-white"></i>
+                                            </span>
+                                            <span className="fa-stack fa-2x info__icon">
+                                                <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
+                                                <i className="far fa-thumbs-up fa-stack-1x icon-white"></i>
+                                            </span>
+                                            <span className="fa-stack fa-2x info__icon">
+                                                <i className="fas fa-circle fa-stack-2x icon-black-opacity"></i>
+                                                <i className="far fa-thumbs-down fa-stack-1x icon-white"></i>
+                                            </span>
                                         </div>
                                     </div>
+                                    <div className="info__overlay--text">
+                                        <h1>{movie.title || movie.name}</h1>
+                                        <h2>{movie.original_title ? `(${movie.original_title})` : ''}</h2>
+                                        <p>{description}</p>
+                                    </div>
                                 </div>
-                }
+                            </div>
+            }
         </header>
     )
 }
