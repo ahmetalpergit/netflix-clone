@@ -16,8 +16,22 @@
     align-items: center;
 }
 
+.nav__list--right {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
 .nav__item {
     margin-right: 2rem;
+}
+
+.nav--right .nav__item {
+    margin-right: 2vw;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
 }
 
 .nav__link {
@@ -77,13 +91,11 @@
 }
 
 .nav--right i {
-    margin-right: 2.5rem;
     font-size: 2rem;
     cursor: pointer;
 }
 
 .nav--right span {
-    margin-right: 2.5rem;
     margin-top: -3px;
     font-weight: 500;
     cursor: pointer;
