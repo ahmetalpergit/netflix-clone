@@ -53,7 +53,7 @@ function Nav(props) {
                     <li className="nav__item"><i className="fas fa-bell"></i></li>
                     <li className="nav__item">
                         <div className="user">
-                            <img className="user__profile" src="images/user.png" alt="user icon"/>
+                            <img className="user__profile" src="images/user2.png" alt="user icon"/>
                             <i className="fas fa-sort-down"></i>
                         </div>
                     </li>
