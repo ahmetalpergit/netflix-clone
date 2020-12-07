@@ -83,13 +83,14 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 50;
+    overflow: scroll;
 }
 
 .info__overlay--contentBox {
     position: absolute;
-    top: 50%;
+    top: 8rem;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 85rem;
     height: auto;
     min-height: 50rem;
@@ -210,7 +211,7 @@
 
     .info__overlay--contentBox {
         width: 95%;
-        top: 6rem;
+        top: 8rem;
         transform: translateX(-50%);
     }
 
