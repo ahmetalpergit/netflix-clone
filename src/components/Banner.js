@@ -9,7 +9,6 @@ function Banner(props) {
     const [movie, setMovie] = useState([]);
     const [description, setDescription] = useState([]);
     const [moreInfo, setMoreInfo] = useState(false);
-
     const [trailerPath, setTrailerPath] = useState('');
 
     useEffect(() => {
