@@ -246,6 +246,12 @@
     }
 }
 
+@media (max-width: 450px) {
+    .info__overlay--text p {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 350px) {
     .rows {
         top: -5rem;
