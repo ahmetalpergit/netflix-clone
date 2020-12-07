@@ -44,7 +44,7 @@ function Row(props) {
                 setTitle(movie?.name || movie?.title);
                 setOriginal_title(movie?.original_name);
             }).catch((error) => {
-                console.log(error);
+                alert('Trailer not found, please try another title!');
             })
         } else {
             setTrailerPath('');
