@@ -23,8 +23,6 @@ function Row(props) {
         fetchData();
     }, [props.fetchUrl]) 
 
-    // console.log(movies)
-
     const opts = {
         playerVars: {
           // https://developers.google.com/youtube/player_parameters

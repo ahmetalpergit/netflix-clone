@@ -23,8 +23,6 @@ function Banner(props) {
         fetchData();
     }, [props.fetchUrl])
 
-    console.log(movie);
-
     function truncate(str, n) {
         if (str?.length > n) {
             return `${str?.substring(0, n - 1)}...`;
