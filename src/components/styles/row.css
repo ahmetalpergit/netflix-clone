@@ -23,7 +23,6 @@
 .row__posters {
     display: flex;
     justify-content: flex-start;
-    gap: 5px;
     overflow-x: scroll;
     overflow-y: hidden;
     padding-left: 3vw;
@@ -72,6 +71,7 @@
     min-height: 8rem;
     transition: transform 0.3s;
     border-radius: 5px;
+    margin-right: 5px;
 }
 
 .info__overlay {
