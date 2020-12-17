@@ -72,6 +72,12 @@
     transition: transform 0.3s;
     border-radius: 5px;
     margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.row__poster:hover {
+    filter: brightness(1.2);
 }
 
 .info__overlay {
@@ -183,6 +189,7 @@
     margin-right: 1.5rem;
     font-size: 2rem;
     z-index: 50;
+    cursor: pointer;
 }
 
 .icon-white {
