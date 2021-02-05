@@ -3,6 +3,7 @@ import axios from '../axios';
 import './styles/banner.css';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
+import {handleError} from './Row';
 
 function Banner(props) {
 
@@ -38,7 +39,7 @@ function Banner(props) {
                 setTrailerPath(path);
                 document.querySelector('body').style.overflow = 'hidden';
             }).catch((error) => {
-                alert('Trailer not found, please try another title!');
+                handleError();
                 console.log(error);
             })
         } else {

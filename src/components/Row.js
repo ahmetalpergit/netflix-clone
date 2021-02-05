@@ -42,7 +42,7 @@ function Row(props) {
                 setTitle(movie?.name || movie?.title);
                 setOriginal_title(movie?.original_name);
             }).catch((error) => {
-                alert('Trailer not found, please try another title!');
+                handleError();
                 console.log(error);
             })
         } else {
@@ -112,6 +112,29 @@ function Row(props) {
             </div>
         </div>
     )
+}
+
+export const handleError = function() {
+    const html = `
+    <div class="error">
+        <div class="error__text">
+            <p class="error__heading">Error:</p>
+            <p class="error__description">Can't find trailer, please try another title!</p>
+        </div>
+    </div>
+    `
+    const body = document.querySelector('body');
+    body.insertAdjacentHTML('afterbegin', html);
+    const error = body.querySelector('.error');
+    error.classList.add('fade-in');
+
+    setTimeout(function() {
+        // error.classList.remove('fade-in');
+        error.classList.add('fade-out');
+        setTimeout(function() {
+            error.remove();
+        }, 500)
+    }, 2500)
 }
 
 export default Row;

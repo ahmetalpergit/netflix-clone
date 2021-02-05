@@ -209,6 +209,49 @@
     color: rgba(32, 32, 32, 1);
 }
 
+.error {
+    position: fixed;
+    padding: 2rem 3rem 2.5rem;
+    top: 10rem;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    border: 1px solid rgba(80, 80, 80, 0.2);
+    border-top: 2px solid #fff;
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+.error__heading {
+    font-family: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.error__description {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.fade-in {
+    animation: fadeIn ease 0.5s;
+}
+
+.fade-out {
+    animation: fadeOut ease 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 @media (max-width: 900px) {
     .nav__list {
         display: none;
