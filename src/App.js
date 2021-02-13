@@ -21,6 +21,9 @@ function App() {
         <Row id="6" title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
         <Row id="7" title="Documentaries" fetchUrl={requests.fetchDocumentaries}/>
       </div>
+      <div className="copyright">
+      <a href="https://github.com/ahmetalpergit/" className="copyright__link">Ahmet Alper <span>&copy; 2020</span></a>
+      </div>
     </div>
   );
 }

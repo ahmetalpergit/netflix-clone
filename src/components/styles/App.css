@@ -15,6 +15,28 @@ html {
     background-color: #111;
 }
 
+.copyright {
+    position: relative;
+    top: -8rem;
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 1.4rem;
+}
+
+.copyright__link,
+.copyright__link:active,
+.copyright__link:visited {
+    box-sizing: inherit;
+    padding: 2px 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright__link:hover {
+    border-bottom: 1px solid #fff;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 50%;
