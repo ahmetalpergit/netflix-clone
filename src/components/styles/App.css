@@ -53,4 +53,8 @@ html {
     html {
         font-size: 41%;
     }
+
+    .copyright {
+        top: -5rem;
+    }
 }
