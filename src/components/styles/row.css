@@ -23,6 +23,7 @@
 .row__posters {
     display: flex;
     justify-content: flex-start;
+    scroll-behavior: smooth;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 1rem 0 1rem 3vw;
@@ -39,6 +40,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     transition: opacity 0.2s;
     z-index: 10;
+    cursor: pointer;
 }
 
 .pagination:hover {
