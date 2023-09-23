@@ -1,6 +1,7 @@
 # [Netflix Clone](https://netflix-clone-2501d.web.app/)
 > by [Ahmet Alper](https://github.com/ahmetalpergit)
-# ![showcase](public/images/showcase.gif)
+
+![showcase](public/images/showcase.gif)
 
 ## Introduction
 
