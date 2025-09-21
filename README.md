@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Welcome to the documentation of my final project for Harvard's CS50 Course. In this documentation you'll find pretty much all the information you need on this project but if you still have any questions contact me: <ahmetalperwork@gmail.com>
+Welcome to the documentation of my final project for Harvard's CS50 Course. In this documentation you'll find pretty much all the information you need on this project but if you still have any questions contact me on LinkedIn
 
 ### Technologies
 
